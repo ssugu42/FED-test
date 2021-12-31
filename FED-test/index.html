@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/activity.js"></script>
+    <script src="assets/data/data.js"></script>
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="lib/canvasjs.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="R-1">
+            <div class="col-1">
+                <div class="logo"><h2>LOGO</h2></div>
+                <nav>
+                    <ul>
+                        <li><button class="active">Option 1</button></li>
+                        <li><button>Option 2</button></li>
+                        <li><button>Option 3</button></li>
+                        <li><button>Option 4</button></li>
+                        <li><button>Option 5</button></li>
+                        <li><button>Option 6</button></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-2">
+                <h2>Hapag-Liyod</h2>
+                <div>
+                    <p>Number of Employees</p>
+                    <h1 id="noOfEmp"></h1>
+                </div>
+                <div>
+                    <p>Next Test Date</p>
+                    <h1 id="nxtTestDate">01/02/2022</h1>
+                </div>
+                <div id="pieChartBlock" class="pieChartBlockClass" style="height: 370px; width: 309px;"></div>
+            </div>
+            <div class="col-3">
+                <div class="stakedChartContainer">
+                    <div class="stakedChartHeader">
+                        <h2>Result Progress</h2>
+                        <div class="monthSelector">
+                            <select id="months"></select>
+                        </div>
+                    </div>
+                    <div class="_barChartBlock" id="barChartBlock" style="height: 370px; width: 670px;">
+                    </div>
+                </div>
+    
+                <div class="ordersBlock" >
+                    <h2>Orders</h2>
+                    <table class="table">
+                        <tr>
+                            <th>Order Numbers</th>
+                            <th>Status</th>
+                            <th>Operator</th>
+                            <th>Location</th>
+                            <th>Start Date</th>
+                            <th>Due Date</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="R-2">
+            <div class="teamRslt"></div>
+            <div class="genderRslt" id="genderChartBlock"></div>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            let load = new LoadDatas();
+            load.loadData();
+        })
+    </script>
+</body>
+</html>

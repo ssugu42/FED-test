@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Calibri;
+}
+
+.canvasjs-chart-credit{
+    display: none;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.wrapper>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.col-1, .col-2>div:nth-child(2), .col-2>div:nth-child(3), .barChartBlock{
+    box-shadow: -1px 1px 10px 1px #f1ecec;
+    margin: 20px 15px;
+    border-radius: 7px;
+    padding: 10px 37px;
+}
+
+.pieChartBlockClass{
+    box-shadow: -1px 1px 10px 1px #f1ecec;
+    margin: 20px 15px;
+    border-radius: 7px;
+}
+
+.col-1 .logo h2{
+    font-size: 20pt;
+    font-weight: bold;
+    border: 2pt solid black;
+    padding: 3px;
+}
+
+nav{
+    margin-top: 20px;
+    margin-left: 3px;
+}
+
+.col-1 nav ul li{
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.col-1 nav ul li button{
+    background: transparent;
+    border: none;
+    outline: none;
+    /* border-bottom: 1px solid rgb(194, 188, 188); */
+    /* padding: 5px 0; */
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.active{
+    background: rgb(245 243 243) !important;
+    border-radius: 5px;
+}
+
+.col-2>h2{
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.col-2 div p{
+    font-weight: bold;
+    margin-bottom: 14px;
+    text-align: center;
+    font-size: 17pt;
+}
+
+.col-2 div h1{
+    color: #46afed;
+    text-align: center;
+    font-size: xxx-large;
+    padding-bottom: 13px;
+}
+
+/* .pieChartBlock{
+    width: 231px;
+    height: 230px;
+} */
+
+.col-3{
+    width: 707px;
+    position: relative;
+}
+
+.col-3 .stakedChartContainer, .col-3 .ordersBlock, .teamRslt{
+    box-shadow: -1px 1px 10px 1px #f1ecec;
+    margin: 20px 15px;
+    border-radius: 7px;
+}
+
+.col-3 .stakedChartContainer .stakedChartHeader{
+    margin: 10px 0 20px 15px;
+    padding-top: 10px;
+}
+
+.col-3 .monthSelector{
+    position: absolute;
+    right: 54px;
+    top: 32px;
+}
+
+.col-3 .monthSelector select{
+    padding: 5px;
+    outline: none;
+    border: 1px solid #e0e1e2;
+    border-radius: 5px;
+}
+
+._barChartBlock{
+    padding: 0 15px;
+}
+
+.ordersBlock{
+    margin: 28px 0 0 15px !important;
+}
+
+.col-3 .ordersBlock h2{
+    margin: 20px 0;
+    text-align: left;
+    font-weight: bold;
+    margin: 0 0 10px 16px;
+    padding-top: 10px;
+}
+
+.col-3 table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.col-3 table thead{
+    background: rgb(224, 220, 220);
+    border-color: #e0e1e2;
+}
+
+.col-3 table th{
+    background-color: #e0e1e2;
+    border-color: #e0e1e2;
+}
+
+.col-3 table td, .col-3 table th{
+    padding: 8px 12px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.col-3 table td, .col-3 table tr{
+    border-top: 1px solid #dee2e6;
+    border-collapse: collapse;
+}
+
+.col-3 table tr td:nth-child(2) p{
+    padding: 2px 1px;
+    border-radius: 5px;
+}
+
+.col-3 table .Pending p{
+    background-color: #e9882c;
+}
+
+.col-3 table .Completed p{
+    background-color: #3fc577;
+}
+
+.col-3 table .Cancelled p{
+    background-color: #f7574b;
+}
+
+.col-3 table tr:nth-child(2):hover, .col-3 table tr:nth-child(3):hover, .col-3 table tr:nth-child(4):hover, .col-3 table tr:nth-child(5):hover, .col-3 table tr:nth-child(6):hover{
+    background-color: rgb(217, 236, 252);
+    cursor: pointer;
+}
+
+.R-2{
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-self: center;
+}
+
+.R-2>div{
+    display: flex;
+    flex-direction: row;
+}
+
+.teamRslt>div{
+    width: 250px;
+    height: 250px;
+    margin: 0 10px;
+}
